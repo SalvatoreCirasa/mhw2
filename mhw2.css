@@ -1,0 +1,490 @@
+
+/*------------------------------------------------------------------------- HOMEWORK 1 --------------------------------------------------------------------------------*/
+body {
+    color: yellow;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    background-color: black;
+    font-style: normal; 
+    line-height: 25px;
+    margin:0;
+    text-transform: uppercase;
+}
+
+nav {
+    height: 70px;  
+    display: flex;
+    background-color: yellow;
+    align-items: center;
+    justify-content: space-around;
+    border: white solid;
+    border-width: 5px;
+ 
+}
+
+a {
+    color: yellow;
+    padding: 3px 10px;
+    border-radius: 30px;
+    font-size: 22px;
+    background-color: black;
+    cursor: pointer;
+    text-decoration:none;
+    letter-spacing: 2px; 
+}
+
+a:hover{
+    color: yellowgreen;
+    background-color: white;
+}
+
+#menu{
+    display: none;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+@media (max-width:500px){
+    nav .flex-item1 {
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+}
+
+header{
+    height: 350px;
+    background-image: url(https://www.wallpapertip.com/wmimgs/18-182348_flying-email-525062410-ss-email-marketing-background.jpg);
+    display: flex; 
+    background-size:cover;
+    background-position: center;
+    justify-content: center;  
+    align-items: center; 
+    position: relative;
+    z-index: -1;
+}
+
+@media (max-width:500px){
+    header{
+        height: 200px;
+        line-height: 1.2;
+    }
+}
+
+header h1 {
+    letter-spacing: 5px; 
+    text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+    font-size: 150px;
+    font-weight: normal;
+    z-index: 1;
+    width: 950px;
+    line-height: 150px;
+    text-align: center;
+
+}
+
+@media (max-width:500px){
+    header h1{
+        line-height: 50px;
+        font-size: 3em;
+        letter-spacing: 8px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+}
+
+
+#overlay {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3); 
+}
+
+
+#presentazione{
+    display: flex;
+    justify-content: space-around;
+    height: 850px;
+    margin: 25px 25px;
+    background-color: yellow;
+    border: white solid;
+    border-width: 5px;
+}
+
+@media (max-width:500px){
+    #presentazione{
+        margin: 0 2px;
+        height: 1250px;
+        flex-direction: column;
+    }
+}
+
+#presentazione div{
+    width: 450px;
+    height: 570px;
+    background-color: black;
+    margin-top: 40px;
+    border:black solid;
+    border-width: 8px;
+}
+
+@media (max-width:500px){
+    #presentazione div{
+        width: 80%;
+        height: 80%;
+        margin-top: 7%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+#presentazione img{
+    width: 100%;
+    max-height: 400px;
+}
+
+#presentazione h1{
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#presentazione p{
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    text-align: start;
+    font-style: italic;
+}
+
+#presentazione a{
+    font-size: 13px;
+    cursor: pointer;
+    line-height: 50px;
+    letter-spacing: 4px; 
+    border:white solid;
+    border-radius: 4px;
+}
+
+#presentazione a:hover{
+    color: black;
+    background-color: white;
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+    letter-spacing: 5px; 
+    text-align: center;
+    border: black solid;
+    border-width: 5px;
+    justify-content: center;
+}
+
+@media (max-width:500px){
+    footer{
+        border:none;
+    }
+}
+
+/*--------------------------------------------------------------------------HOMEWORK 2 ---------------------------------------------------------------------------- */
+
+
+ /*--------------------------------------------------------------------- BARRA DI RICERCA + TITOLO -----------------------------------------------------------------*/
+
+#ricerca {
+    position: relative;
+    display: flex;
+    height: 40px;
+    margin: 30px auto 20px auto;
+    background-color: white;
+    width: 90%;
+
+}
+
+#cerca {
+    position: absolute;
+    right: 5px;
+    top:10px;
+    width: 250px;
+    border:3px solid red;
+}
+
+#ricerca h1, #ricerca p{
+    position: absolute;
+    margin: 5px ;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+@media(max-width:500px){
+    #ricerca h1 {
+        display: none;
+    }
+}
+
+
+#ricerca p{
+    right: 260px;
+    top:5px;
+}
+
+@media(max-width:500px){
+    #ricerca p {
+        left: 5px;
+    }
+}
+
+
+#question-name{
+    color:white;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    border: 4px solid white;
+    border-radius: 5px;
+    margin-top: 30px;
+    height: 70px;
+}
+
+@media(max-width:500px){
+    #question-name {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 95%;
+        border:2px solid white;
+        height: 120px;
+    }
+}
+
+#question-name .titolo{
+    font-size: 30px;
+    color:yellow;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+@media(max-width:500px){
+    #question-name .titolo {
+       line-height: 40px;
+    }
+}
+
+ /*--------------------------------------------------------------------- SEZIONE DEI DRONI----------------------------------------------------------------*/
+#griglia {
+    display: flex;
+    height: 2000px;
+    border: 5px yellow solid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width:500px){
+    #griglia{
+        height: 2700px;;
+    }
+}
+
+.container {
+    margin-top: 30px;
+    height: 600px;
+    width: 550px;
+    background-color: black;
+    border: 3px white solid;
+    text-align: center;
+}
+
+@media (max-width:500px){
+    .container{
+        height: 400px;
+        width: 350px;
+    }
+}
+
+.bordoPlus{
+    border: 5px yellow solid;
+}
+
+.sfondo {
+    height: 60%;
+    width: 100%;
+}
+
+@media (max-width:500px){
+    .sfondo{
+        height: 50%;
+    }
+}
+
+.pulsante{
+    height: 30px;
+    width: 150px;
+    font-family: 'Mukta', sans-serif;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.pulsante:hover{
+    background-color: yellow;
+}
+
+@media (max-width:500px){
+    .pulsante{
+        height: 25px;
+        font-size: 10px;
+        width: 100px;
+    }
+}
+
+.Titolo{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+@media (max-width:500px){
+    .titolo{
+        font-size: 25px;
+    }
+}
+
+.preferiti2{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .preferiti2{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+
+.descrizione {
+    color: yellow;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+@media (max-width:500px){
+    .descrizione{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+
+/*---------------------------------------------------------------BARRA DEI PREFERITI--------------------------------------------------------------------------*/
+
+.preferiti{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+@media(max-width:500px){
+    .preferiti{
+       height: 150px;
+    }
+}
+
+.preferiti h1{
+    width: 100px;
+    height: 30px;
+    margin: 5px ;
+}
+
+@media (max-width:500px){
+    .preferiti h1{
+        display: none;
+    }
+}
+
+
+.blocco {
+    height: 180px;
+    width: 180px;
+    border: 2px black solid;
+    margin-top: 7px;
+}
+
+@media (max-width:500px){
+    .blocco{
+        height: 130px;
+        width: 95px;
+    }
+}
+
+.stella {
+    width: 33%;
+    height: 15%;
+    cursor: pointer;
+}
+
+.testo{
+    letter-spacing: normal;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    margin:0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@media (max-width:500px){
+    .testo{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+}
+
+.icona {
+    width: 100%;
+    height: 70%;
+}
+
+@media (max-width:500px){
+    .icona{
+        height: 55%;
+    }
+}
+
+
+/*------------------------------------------------------------------ PROPRIETA' GENERALI ----------------------------------------------------------------------------*/
+
+.hidden{
+    display: none;
+}
+
+
+
+
